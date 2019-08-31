@@ -20,13 +20,13 @@ function appointment() {
     }
 
     if (document.getElementById("time_1_2").value === '' && document.getElementById("time_2_2").value === ''){
-        appointment_two = '';
+        appointment_two = appointment_one;
     } else{
         appointment_two = document.getElementById("time_1_2").value + "_" + document.getElementById("time_2_2").value;
     }
 
     if (document.getElementById("time_1_3").value === '' && document.getElementById("time_2_3").value === ''){
-        appointment_three = '';
+        appointment_three = appointment_one;
     } else{
         appointment_three = document.getElementById("time_1_3").value + "_" + document.getElementById("time_2_3").value;
     }

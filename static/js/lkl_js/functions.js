@@ -125,7 +125,7 @@ function corrected_email() {
             var msg = document.createTextNode(' 邮箱格式错误 ');
             error.appendChild(msg);
         }
-    } else if (is_match[0] === email.value) {
+    } else if (is_match[0]) {
         email.style.borderBottom = null;
         error.hidden = true;
         error.innerText = null;

@@ -12,6 +12,9 @@ function timeSet(sel, next) {
         }
     }
     if (next !== undefined){
+        // if (next.value){
+        //
+        // }
         next.disabled = false;
         next.style.backgroundColor = "#ffffff";
     }

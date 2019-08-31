@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>登录</title>
     {% load static %}
-    <link rel="stylesheet" type="text/css" href={% static '/css/zhb/css/inter_login.css' %} />
-    <script src={% static '/css/zhb/js/JQuery_1.js' %}></script>
+    <link rel="stylesheet" type="text/css" href={% static '/css/zhb_css/inter_login.css' %} />
+    <script src={% static 'js/zhb_js/JQuery_1.js' %}></script>
 </head>
 {% endblock%}
 
@@ -42,7 +42,7 @@
                 <input id="input_password" type="password" name="password" placeholder="请输入密码"
                     onfocus="this.placeholder=''" onblur="this.placeholder='请输入密码'" />
                 <br />
-                <div id="tip"> </div>
+                <div id="tip">&nbsp;</div>
                 <input id="submit" type="submit" value="登录" form="userForm" onclick="log_submit()">
 
             </form>

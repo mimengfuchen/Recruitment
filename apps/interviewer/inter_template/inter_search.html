@@ -1,25 +1,26 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html>
-{% block statics%}
+{#{% block statics%}#}
 <head>
     <meta http-equiv="Content-Type" charset="UTF-8" lang="zh">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>查看面试者资料</title>
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="../../../static/css/zhb/css/inter_search.css"/>
-    <script src={% static '/css/zhb/js/JQuery_1.js' %}></script>
+{#    <link rel="stylesheet" type="text/css" href="{% static 'css/lqz_css/regi.css' %}" />#}
+    <link rel="stylesheet" type="text/css" href='{% static '/css/zhb_css/inter_search.css' %}'/>
+    <script src={% static 'js/zhb_js/JQuery_1.js' %}></script>
 </head>
-{% endblock%}
+{#{% endblock%}#}
 
 <body>
     <div id="head">
-        <img src={% static '/css/zhb/img/logo_blue.svg' %} alt="">
+        <img src={% static '/img/logo_blue.svg' %} alt="">
         <span id="ziliao">资料</span>
         <span id="pingjia">评价</span>
     </div>
     <div id="out">
-        <img id="out_pic" src={% static '/css/zhb/img/out.svg' %} alt="" onclick="logout()">
+        <img id="out_pic" src={% static '/img/out.svg' %} alt="" onclick="logout()">
         <p id="inter_name">欢迎你,{{ name }}</p>
     </div>
     <div id="mange_inter">

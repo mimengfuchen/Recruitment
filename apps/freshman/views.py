@@ -3,7 +3,6 @@ from django.http import HttpResponse
 from django.views.generic.base import View
 from django.core.mail import send_mail
 from django.apps import apps
-from django.views.decorators.csrf import ensure_csrf_cookie
 
 import random
 import time
@@ -342,12 +341,12 @@ class InterviewResultView(View):
         else:
             student = Freshman.objects.get(newstudent_id=newstudent_id)
             # 大概逻辑
-            if not student.interview_result:
+            if student.score == 0:
                 return
             else:
-                if '通过' in student.interview_result:  # 面试成功
+                if student.score >= 6:  # 面试成功
                     return render(request, '../freshman_templates/succ_inter.html', {'student': student})
-                else:                                    # 面试失败
+                elif student.score != 0 and student.score < 6:                                    # 面试失败
                     return render(request, '../freshman_templates/faul_inter.html', {'student': student})
 
 

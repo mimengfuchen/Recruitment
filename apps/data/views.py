@@ -1,13 +1,12 @@
-import random
+﻿import random
+from apps.freshman.models import *
 from apps.interviewer.models import AppointmentTiem
 from django.http import HttpResponse
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render
 from ..freshman import models
-from apps.freshman.models import *
 import random
-from example.commons import Collector
 from pyecharts import options as opts
-from pyecharts.charts import Page, Sunburst
+from pyecharts.charts import Sunburst
 
 
 # Create your views here.
@@ -74,6 +73,7 @@ def manage(request):
                 student.application = '请在这里编辑你的申请书吧'
                 student.evaluate = '请在这里编辑你对这位新人的评价'
                 student.interview_result_A = 0
+                student.score = 0
                 student.save()
             print(1)
             return HttpResponse('数据生成完成')
@@ -124,11 +124,10 @@ def appoint_interview_time(request):
             return '请输入面试时间'
 
         all_student = Freshman.objects.all()
-        all_student_appointmenttime = [0 for a in range(len(all_student))]
-        for a in range(len(all_student)):
-            all_student_appointmenttime[a] = {"newstudent_id": all_student[a].newstudent_id, "appointment_one":
-                all_student[a].appointment_one, "appointment_two": all_student[a].appointment_two,
-                                              "appointment_three": all_student[a].appointment_three}
+        all_student_appointmenttime = []
+        for a in all_student:
+            all_student_appointmenttime.append({"newstudent_id": a.newstudent_id, "appointment_one": a.appointment_one,
+                                        "appointment_two": a.appointment_two, "appointment_three": a.appointment_three})
 
         # 建立空字典列表，每个字典的值为列表，储存学生id
         all_time_student = {}
@@ -175,11 +174,11 @@ def appoint_interview_time(request):
 def creatimg(request, num):
     if num == '1':
         c = major_academy()
-        c.render(path='apps/data/templates/one.html')
+        c.render(path='/home/Recruitment_System/apps/data/templates/one.html')
         return render(request,'one.html')
     elif num == '2':
         c = gender_direction()
-        c.render(path='apps/data/templates/two.html')
+        c.render(path='/home/Recruitment_System/apps/data/templates/two.html')
         return render(request,'two.html')
     else:
         pass

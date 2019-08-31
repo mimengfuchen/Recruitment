@@ -10,17 +10,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
     <script type="text/javascript">
-        function a(){
-            swal({
-                title : "云顶微信公众号",
-                text:"扫码关注",
-                imageUrl: "/static/img/QRcode.png",
-                     allowOutsideClick:"ture",
-                confirmButtonText : "确认",
-                closeOnConfirm : false,
-                animation:"pop",
-             });
-        }
+        {#function a(){#}
+        {#    swal({#}
+        {#        title : "云顶微信公众号",#}
+        {#        text:"扫码关注",#}
+        {#        imageUrl: "/static/img/QRcode.png",#}
+        {#             allowOutsideClick:"ture",#}
+        {#        confirmButtonText : "确认",#}
+        {#        closeOnConfirm : false,#}
+        {#        animation:"pop",#}
+        {#     });#}
         function b(Date, place){
             if ((Date === ''|| Date === 'None')&&(place === '' || place === 'None')){
                 swal({
@@ -42,7 +41,7 @@
         }
         function c(result){
             console.log(result);
-            if (result === '' || result === 'None'){
+            if (result === '0'){
                 swal({
                     title : "面试结果还没出炉",
                     type:"info",
@@ -89,7 +88,7 @@
             <div id="date_two"></div>
         </div>
         <div id="cover_understand">
-            <input type="button" value="了解云顶书院" id="understand" onclick="a()"/>
+            <input type="button" value="了解云顶书院" id="understand" onclick="location.href='http://www.yundingshuyuan.com/'"/>
         </div>
     </div>
     <div id="down"></div>
@@ -123,7 +122,7 @@
             <div class="content_one" id="arranges">ADDRESS<br>TIME</div>
         </div>
         <div id="interview_result">
-            <input type="button" class="a" onclick="c('{{ student.interview_result }}')"/>
+            <input type="button" class="a" onclick="c('{{ student.score }}')"/>
             <div class="content_two">面试结果</div>
 {#            <a href="{% url 'freshman:result' %}" target="_self">#}
             <div class="content_one">INTER<br>VIEW

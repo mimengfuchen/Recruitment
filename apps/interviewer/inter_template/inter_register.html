@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>注册</title>
     {% load static %}
-    <link rel="stylesheet" type="text/css" href={% static '/css/zhb/css/inter_register.css' %} />
-    <script src={% static '/css/zhb/js/JQuery_1.js' %}></script>
+    <link rel="stylesheet" type="text/css" href={% static '/css/zhb_css/inter_register.css' %} />
+    <script src={% static 'js/zhb_js/JQuery_1.js' %}></script>
 {#    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>#}
 </head>
 {% endblock%}
@@ -49,7 +49,7 @@
                     <input class="btn" id="btn2" type="button" value="设计" onmousedown="btnChange(this)">
                     <input class="btn" id="btn3" type="button" value=" 秘书处" onmousedown="btnChange(this)">
                 </div>
-                <div id="tip"> </div>
+                <div id="tip">&nbsp;</div>
                 <input id="submit" type="button" value="注册" form="userForm" onclick="reg_submit()">
             </form>
             <div id="link_register">

@@ -5,9 +5,10 @@
 		<meta charset="utf-8" />
 		<title>报名成功</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
+        <meta name="viewport" content="height=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
 		<link rel="stylesheet" type="text/css" href="{% static 'css/lqz_css/regi.css' %}" />
 	</head>
-	<body>
+	<body onload="height()">
 		<div class="header">
 			<div class="name">
 				<h1>小可爱报名成功啦~</h1>
@@ -16,7 +17,7 @@
 			<img src="{% static 'img/cloud.png' %}" alt="" class="cloud">
 		</div>
 		
-		<div class="white">
+		<div class="white" id="wie">
 			<!-- 内容 -->
 			<div class="content">
 						<ul>
@@ -38,9 +39,14 @@
 				<input id="sbt2" type="button" value="确认" onclick="location.href='/homepage/'">
 		</div>
 	</body>
-{#<script>#}
-{#    function backtohomepage() {#}
-{#        window.location.href = '/homepage/'#}
-{#    }#}
-{#</script>#}
+<script>
+    function height() {
+        var h = window.screen.height;
+        alert(h);
+        var a = document.getElementById('wie');
+        alert(0.7*h);
+        a.style.height = "448";
+        {#alert(h)#}
+    }
+</script>
 </html>

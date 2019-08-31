@@ -1,0 +1,26 @@
+--2019-08-30 13:10:08--  https://github-production-release-asset-2e65be.s3.amazonaws.com/48378947/4ad06a80-caa8-11e9-9b12-f5b83d2d0dc2?X-Amz-Algorithm=AWS4-HMAC-SHA256
+Resolving github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)... 54.231.98.184
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|54.231.98.184|:443... failed: Connection timed out.
+Retrying.
+
+--2019-08-30 13:12:17--  (try: 2)  https://github-production-release-asset-2e65be.s3.amazonaws.com/48378947/4ad06a80-caa8-11e9-9b12-f5b83d2d0dc2?X-Amz-Algorithm=AWS4-HMAC-SHA256
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|54.231.98.184|:443... failed: Connection timed out.
+Retrying.
+
+--2019-08-30 13:14:26--  (try: 3)  https://github-production-release-asset-2e65be.s3.amazonaws.com/48378947/4ad06a80-caa8-11e9-9b12-f5b83d2d0dc2?X-Amz-Algorithm=AWS4-HMAC-SHA256
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|54.231.98.184|:443... failed: Connection timed out.
+Retrying.
+
+--2019-08-30 13:16:36--  (try: 4)  https://github-production-release-asset-2e65be.s3.amazonaws.com/48378947/4ad06a80-caa8-11e9-9b12-f5b83d2d0dc2?X-Amz-Algorithm=AWS4-HMAC-SHA256
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|54.231.98.184|:443... failed: Connection timed out.
+Retrying.
+
+--2019-08-30 13:18:47--  (try: 5)  https://github-production-release-asset-2e65be.s3.amazonaws.com/48378947/4ad06a80-caa8-11e9-9b12-f5b83d2d0dc2?X-Amz-Algorithm=AWS4-HMAC-SHA256
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|54.231.98.184|:443... failed: Connection timed out.
+Retrying.
+
+--2019-08-30 13:21:00--  (try: 6)  https://github-production-release-asset-2e65be.s3.amazonaws.com/48378947/4ad06a80-caa8-11e9-9b12-f5b83d2d0dc2?X-Amz-Algorithm=AWS4-HMAC-SHA256
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|54.231.98.184|:443... connected.
+HTTP request sent, awaiting response... 400 Bad Request
+2019-08-30 13:21:01 ERROR 400: Bad Request.
+

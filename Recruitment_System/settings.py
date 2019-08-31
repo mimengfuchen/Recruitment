@@ -25,7 +25,7 @@ SECRET_KEY = 'qi4)c&u7+svs!lnllk957$e0t8^arheeh*_h0c-w0-^loq*i(!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','192.168.137.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -89,9 +89,9 @@ WSGI_APPLICATION = 'Recruitment_System.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "recruitmentsystem",
+        'NAME': "recruitment",
         "USER": "root",
-        "PASSWORD": "nmb19720",
+        "PASSWORD": "hmm15986.0",
         "HOST": "127.0.0.1"
     }
 }
@@ -135,7 +135,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
@@ -160,9 +161,9 @@ CKEDITOR_CONFIGS = {
     }
 }
 
-EMAIL_HOST = 'smtp.qq.com'
-EMAIL_PORT = 25
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = False
-EMAIL_FROM = ''
+EMAIL_HOST= 'smtp.163.com'
+EMAIL_PORT= 465
+EMAIL_HOST_USER = 'zxf1242410479@163.com'
+EMAIL_HOST_PASSWORD = 'qazwsxedc123'
+EMAIL_USE_SSL = True
+EMAIL_FROM = 'Recruitment_System <zxf1242410479@163.com>'

@@ -27,6 +27,9 @@ body{
 #header_top{
     height: 64px;
 }
+a{
+    text-decoration: none;
+}
 #header_main{
     height: 136px;
     width: 89%;
@@ -34,6 +37,7 @@ body{
     position: relative;
     left: 11%;
     font-size: 13px;
+    letter-spacing: 2px;
 }
 #header_main b{
     font-size: 25px;
@@ -52,13 +56,14 @@ body{
     color: darkgray;
 }
 input, .select_list{
+    border-radius: 0 10px 10px 0;
     width: 67%;
     height: 40px;
-    border: none;
+    border: solid 1px #f5f5f5;
     margin-top: 30px;
     text-indent: 3%;
     outline: none;
-    background-color: #ffffff;
+    background-color: #fbfbfb;
     font-weight: 100;
 }
 input[type=submit], input[type=button]{
@@ -184,7 +189,7 @@ input[type=radio]+.gender_icon{
 }
 input:focus, .select_list:focus{
     border-left: solid 2px #297AFF;
-    box-shadow: 0 1px #E9E9E9;
+    box-shadow: 10px 10px 6px #E9E9E9;
 }
 
 ::-webkit-input-placeholder{
@@ -300,6 +305,7 @@ input[type=radio]:checked+.female_icon{
     width: 100%;
 }
 .error{
+    letter-spacing: 2px;
     font-size: 10px;
     font-weight: 700;
     text-align: center;
@@ -309,6 +315,7 @@ input[type=radio]:checked+.female_icon{
     bottom:25%;
 }
 .login_error{
+    letter-spacing: 2px;
     font-size: 10px;
     font-weight: 700;
     text-align: center;

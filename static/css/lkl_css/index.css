@@ -21,14 +21,23 @@ body{
     height: 115px;
     width: 100%;
 }
-#login,#register{
+#register{
     border: solid 1px #FFFFFF;
     width: 35%;
     height: 40px;
     border-radius: 10px;
     float: left;
     margin-left: 10%;
-    padding-left: 1%;
+}
+#login{
+    border: solid 1px #297AFF;
+    color: #ffffff;
+    background-color: #297AFF;
+    width: 35%;
+    height: 40px;
+    border-radius: 10px;
+    float: left;
+    margin-left: 10%;
 }
 #footer div a{
     font-size: 18px;
@@ -39,20 +48,28 @@ body{
     top: 7px;
     text-align: center;
 }
-#register:hover,#login:hover{
+#register:hover{
     background-color: #297AFF;
     border: #297AFF;
     transition: 0.5s;
+}
+#login:hover{
+    background-color: transparent;
+    border: solid 1px #ffffff;
+    transition: 1ms;
 }
 #YD_logo{
     max-height: 30px;
     max-width: 45px;
     position: relative;
     top: 64px;
-    left: 77%;
+    left: 81%;
 }
 div p{
     font-size: 20px;
+}
+#year{
+    letter-spacing: 2px;
 }
 div b{
     font-size: 30px;
