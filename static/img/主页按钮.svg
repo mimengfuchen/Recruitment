@@ -1,0 +1,35 @@
+<svg id="主页按钮" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="100" viewBox="0 0 150 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_16" data-name="矩形 16" width="150" height="100" rx="10" transform="translate(0)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <rect id="矩形_1" data-name="矩形 1" width="150" height="100" rx="10" fill="#003ddf"/>
+  <g id="组_3" data-name="组 3">
+    <g id="组_2" data-name="组 2" clip-path="url(#clip-path)">
+      <g id="组_1" data-name="组 1" opacity="0.6">
+        <rect id="矩形_2" data-name="矩形 2" width="179.544" height="113.038" transform="translate(-12.944 2.001) rotate(-4.997)" fill="#1f8aff" opacity="0"/>
+        <rect id="矩形_3" data-name="矩形 3" width="177.194" height="111.558" transform="translate(-10.427 5.808) rotate(-7.574)" fill="#2b90ff" opacity="0.077"/>
+        <rect id="矩形_4" data-name="矩形 4" width="175.212" height="110.31" transform="translate(-1.888 8.425) rotate(-10.215)" fill="#3896ff" opacity="0.154"/>
+        <rect id="矩形_5" data-name="矩形 5" width="173.609" height="109.301" transform="translate(11.694 11.255) rotate(-12.91)" fill="#449cff" opacity="0.231"/>
+        <rect id="矩形_6" data-name="矩形 6" width="172.398" height="108.539" transform="matrix(0.963, -0.27, 0.27, 0.963, 29.338, 15.701)" fill="#50a1ff" opacity="0.308"/>
+        <rect id="矩形_7" data-name="矩形 7" width="171.585" height="108.027" transform="translate(50.064 23.165) rotate(-18.421)" fill="#5da7ff" opacity="0.385"/>
+        <rect id="矩形_8" data-name="矩形 8" width="171.178" height="107.771" transform="translate(72.81 35.019) rotate(-21.212)" fill="#69adff" opacity="0.462"/>
+        <rect id="矩形_9" data-name="矩形 9" width="171.178" height="107.771" transform="matrix(0.913, -0.407, 0.407, 0.913, 90.43, 48.454)" fill="#75b3ff" opacity="0.538"/>
+        <rect id="矩形_10" data-name="矩形 10" width="171.585" height="108.027" transform="matrix(0.893, -0.451, 0.451, 0.893, 107.721, 63.727)" fill="#81b9ff" opacity="0.615"/>
+        <rect id="矩形_11" data-name="矩形 11" width="172.398" height="108.539" transform="translate(123.769 79.688) rotate(-29.573)" fill="#8ebfff" opacity="0.692"/>
+        <rect id="矩形_12" data-name="矩形 12" width="173.609" height="109.301" transform="translate(137.66 95.186) rotate(-32.312)" fill="#9ac4ff" opacity="0.769"/>
+        <rect id="矩形_13" data-name="矩形 13" width="175.212" height="110.31" transform="matrix(0.819, -0.574, 0.574, 0.819, 148.48, 109.071)" fill="#a6caff" opacity="0.846"/>
+        <rect id="矩形_14" data-name="矩形 14" width="177.194" height="111.558" transform="matrix(0.792, -0.611, 0.611, 0.792, 155.313, 120.194)" fill="#b3d0ff" opacity="0.923"/>
+        <rect id="矩形_15" data-name="矩形 15" width="179.544" height="113.038" transform="translate(157.246 127.404) rotate(-40.225)" fill="#bfd6ff"/>
+      </g>
+    </g>
+  </g>
+  <text id="云顶报名" transform="translate(23.772 44.481)" fill="#fff" font-size="18" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.6em"><tspan x="0" y="0">云</tspan><tspan y="0" font-family="MicrosoftJhengHeiUIRegular, Microsoft JhengHei UI">顶报</tspan><tspan y="0">名</tspan></text>
+  <text id="SIGNUP" transform="translate(50.06 78.241)" fill="#fff" font-size="8" font-family="SegoeUI, Segoe UI" letter-spacing="0.4em" opacity="0.7"><tspan x="0" y="0">SIGNUP</tspan></text>
+  <rect id="矩形_17" data-name="矩形 17" width="80" height="1" transform="translate(35 55.937)" fill="url(#linear-gradient)"/>
+</svg>
